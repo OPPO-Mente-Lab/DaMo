@@ -243,24 +243,14 @@ class EvalTools():
 
 def main():
     configs = {
-        "mllm_name": "qwen2.5vl", # qwen2.5vl  internvl
-        "task_type": "MT-Plan", # or Mobile-FC
-        # "model_path": '/mnt/workspace/shikai/checkpoint/InternVL2_5-4B/',
-        "model_path": '/mnt/workspace/shikai/checkpoint/Qwen2.5-VL-3B-Instruct',
-        "embedding_path": '/mnt/workspace/shikai/checkpoint/bge-large-zh-v1.5/',
+        "mllm_name": "qwen2.5vl", # qwen2.5vl or internvl
+        "task_type": "MT-Plan",
+        "model_path": '<Your checkpoint path>',
+        "embedding_path": '<bge-large-zh-v1.5 model path>',
         "img_root_path": "./data/images",
         "evalset_path": "./data/evalset/mt-plan.json",
         "res_path" : "./output"
     }
-    # configs = {
-    #     "mllm_name": "qwen2.5vl", # qwen2.5vl or internvl
-    #     "task_type": "MT-Plan",
-    #     "model_path": '<Your checkpoint path>',
-    #     "embedding_path": '<bge-large-zh-v1.5 model path>',
-    #     "img_root_path": "./data/images",
-    #     "evalset_path": "./data/evalset/mt-plan.json",
-    #     "res_path" : "./output"
-    # }
 
     eval_tool = EvalTools(**configs)
     eval_tool()
