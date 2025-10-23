@@ -1,6 +1,6 @@
 # DaMo: Data Mixing Optimizer in Fine-tuning Multimodal LLMs for Mobile Phone Agents
 
-paper: [DaMo: Data Mixing Optimizer in Fine-tuning Multimodal LLMs for Mobile Phone Agents](https://openreview.net/forum?id=uE40prCnsQ)
+paper: [DaMo: Data Mixing Optimizer in Fine-tuning Multimodal LLMs for Mobile Phone Agents](http://arxiv.org/abs/2510.19336)
 
 ## Data Mixing Optimizer
 ![DaMo pipeline](source/DaMo.png)
